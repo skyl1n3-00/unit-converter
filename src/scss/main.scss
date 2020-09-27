@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+$main-color: purple;
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', 'sans-serif';
+  overflow: hidden;
+}
+
+header {
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $main-color;
+
+  h2 {
+    font-size: 3rem;
+    color: #fff;
+  }
+}
+
+.wrapper {
+  padding: 2rem 5rem;
+  height: 59%;
+
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .chose-section {
+      margin-top: -6rem;
+    }
+
+    select {
+      padding: 0.5rem 0rem;
+      color: $main-color;
+      font-size: 1rem;
+      border-radius: 5px;
+      width: 20rem;
+      text-align-last: center;
+      border-color: $main-color;
+      margin-bottom: 2rem;
+    }
+
+    .mesurement-inputs {
+      display: flex;
+
+      select {
+        width: 12rem;
+        margin-left: 1rem;
+        option {
+          color: $main-color;
+          height: 4rem;
+          border: 1px solid $main-color;
+          border-radius: 5px;
+        }
+      }
+
+      input {
+        width: 11.6rem;
+        margin-left: 1rem;
+        color: $main-color;
+        height: 2rem;
+        border: 1px solid $main-color;
+        border-radius: 5px;
+        font-size: 1.3rem;
+        padding-left: 5px;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $main-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  margin-bottom: 0rem;
+  h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+}
